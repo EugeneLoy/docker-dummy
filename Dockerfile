@@ -1,9 +1,6 @@
-FROM python:3.9
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8-alpine3.10
 
 WORKDIR /root
-
-COPY requirements.txt .
-RUN pip install -r requirements.txt
 
 COPY main.py main.py
 
